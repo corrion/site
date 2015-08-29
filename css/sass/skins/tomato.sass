@@ -1,0 +1,123 @@
+@import "../bourbon/bourbon"
+
+$color: #FF6347 //Theme skin
+$text_color: #ecf0f1
+$main_color: #2c3e50
+$bg_light: #fff
+$asphalt: #34495e
+
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p, 
+body .main_footer,
+#s_about li  
+	color: $asphalt
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+
+.personal_header
+	+kerning(2)
+
+svg
+	path
+		fill: $bg_light
+
+.toggle_menu
+	background-color: $main_color
+
+#touch-menu:hover 
+	border-bottom: 3px solid $bg_light
+
+.nav 
+	li 
+		a
+			color: $bg_light
+		a:hover
+			border-bottom: 3px solid $asphalt
+		
+#touch-menu
+	color: #fff 
+
+.top_text
+	display: inline-block
+	h1
+		color: $bg_light
+		border: 6px solid $bg_light
+		background-color: rbga(0,0,0,.5)
+	p
+		color: $bg_light
+		+kerning(5)
+
+.bg_light 
+	background-color: $bg_light
+
+.bg_dark 
+	background-color: $main_color
+	h2, a, p, h3, div
+		color: $bg_light
+
+	.s_descr_wrap
+		.s_desc
+			color: $bg_light
+			&::after
+				background-color: $bg_light
+
+
+.s_desc 
+	+kerning(5)
+	&::after
+		background-color: $main_color
+
+section 
+	h3 
+		+kerning(5)
+		color: $asphalt
+
+.main_footer 
+	color: $bg_light
+
+
+.social_wrap 
+	ul 
+		li
+			a:hover
+				color: $asphalt
+				transition: .5s
+
+.resume_container 
+	h3
+		color: $bg_light
+		+kerning(2)
+		font-size: 16px
+		font-weight: 400
+	.left
+		border-right: $bg_light 1px solid 
+	.left strong
+		margin-left: 10px
+	.right strong
+		margin-right: 10px
+		
+.resume_icon
+	i
+	color: #fff
+
+.resume_item
+	.year
+		background-color: $bg_light
+		color: $asphalt
+	.resume_discription
+		+kerning(1)

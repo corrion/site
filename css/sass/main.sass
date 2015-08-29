@@ -1,0 +1,267 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+section, 
+.main-head
+	position: relative	
+	h3 
+		text-align: center 	
+		text-transform: uppercase
+		font-weight: 400
+		font-size: 14px
+
+section 
+	padding: 70px 0 90px
+	h2
+		text-align: center
+		text-transform: uppercase
+		font-size: 24px
+		margin: 0 0 15px
+	.personal_header
+		font-size: 13px
+		margin-bottom: 30px
+		color: #555
+
+.s_descr_wrap 
+	text-align: center
+	.s_desc 
+		display: inline-block
+		text-transform: uppercase
+		font-size: 12px
+		position: relative
+		margin-bottom: 130px
+		&::after
+			content: ""
+			height: 1px
+			left: 50%
+			margin-left: -75px
+			margin-top: 60px
+			width: 150px
+			position: absolute
+			
+.main-head
+	min-height: 620px 
+	padding-top: 20px
+
+.loader  
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+.loader_inner
+	background-image: url("../img/preloader.gif")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+	height: 120px
+	width: 120px
+	margin-top: -30px
+	margin-left: -30px
+	left: 50%
+	top: 50%
+	position: absolute
+
+svg 
+	width: 100px
+	position: relative
+	z-index: 100
+	float: left
+	margin-top: 10px
+
+
+a, a:hover 
+	text-decoration: none
+
+
+.clearfix:before,
+.clearfix:after 
+	content: " "
+	display: table
+
+.clearfix:after 
+	clear: both
+
+.left 
+	float: left
+
+.right 
+	float: right
+
+.text-right 
+	text-align: right
+.text-left  
+	text-align: left
+.container 
+	max-width: 960px
+	margin: 0 auto
+	width: 100%
+
+header
+	padding: 10px
+	position: relative
+
+.nav 
+	float: right
+	position: absolute    
+	z-index: 200
+	right: 0
+	li 
+		float: left
+		list-style-type: none
+		a
+			display: block
+			padding: 10px 15px
+			font-weight: bold
+			font-size: 14px
+			text-transform: uppercase
+
+#touch-menu
+	display: block
+	padding: 12px 15px
+	font-weight: bold
+	font-size: 14px
+	display: none
+	text-transform: uppercase
+	position: absolute    
+	z-index: 200
+	right: 0
+
+.logo 
+	float: left
+
+.top_wrapper 
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0 
+	left: 0
+
+	.top_discription 
+		display: table-row
+		.top_centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+	.top_text
+		display: inline-block
+		height: 1px
+		h1
+			display: inline-block
+			padding: 10px 30px 
+			color: #fff
+			border: 6px solid #fff
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 2.8em
+			background-color: rbga(0,0,0,.5)
+			+animation-delay(.8s)
+		p
+			text-transform: uppercase
+			margin: 0
+			+animation-delay(1.5s)
+
+.main_footer 
+	padding: 50px 0
+	font-size: 13px 
+	font-weight: 400 
+
+.row 
+	margin: 0
+
+.person 
+	text-align: center
+	margin-bottom: 35px
+	img
+		max-width: 220px
+		display: inline-block
+		height: 100%
+		border-radius: 50%
+#s_about
+	ul,
+	li 	
+		margin: 0
+		padding: 0
+		list-style-type: none
+	p 	
+		margin-bottom: 30px 
+	li 
+		margin-bottom: 10px
+
+.social_wrap 
+	li 
+		display: inline-block
+		font-size: 20px
+		padding: 0 8px
+
+.resume_container 
+	.left
+		text-align: right
+		h3
+			text-align: right
+	.right
+		text-align: left
+		h3
+			text-align: left
+	h3
+		margin-top: 30px
+
+.resume_icon
+	i
+		font-size: 60px
+	
+
+.resume_item
+	margin-bottom: 40px
+	.year 
+		display: inline-block
+		margin-bottom: 20px
+		padding: 0 15px
+		font-weight: 600
+		font-style: italic
+	.resume_discription
+		font-style: italic
+	strong 
+		font-weight: 600
+		font-style: normal
+		text-transform: uppercase
+	&:last-child
+		margin-bottom: 0
+		p
+			margin-bottom: 0
+#s_portfolio 
+	height: 100%
+	min-height: 620px
+
+.left 
+	.resume_discription
+		padding-left: 25%
+
+.right 
+	.resume_discription
+		padding-right: 25%
