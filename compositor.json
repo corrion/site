@@ -46,7 +46,7 @@
     },
     {
       "component": "header",
-      "heading": "site",
+      "heading": "My favorite web site",
       "subhead": null,
       "children": [
         {
@@ -59,7 +59,27 @@
           "user": "corrion",
           "repo": "site"
         }
-      ]
+      ],
+      "links": [
+        {
+          "href": "",
+          "text": "About me"
+        },
+        {
+          "href": "",
+          "text": "What can i do "
+        },
+        {
+          "href": "",
+          "text": "Folio?"
+        },
+        {
+          "href": "",
+          "text": "Telegram me"
+        }
+      ],
+      "slug": "Just look! It's",
+      "text": ""
     },
     {
       "component": "footer",
